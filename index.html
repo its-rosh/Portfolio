@@ -6,19 +6,22 @@
 
     <title>Roshita Jaiswal</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fa8e32ce7e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
                 <img src="6.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Studies</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>UI/UX Design</p>
@@ -35,7 +38,13 @@
         </div>
         <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis, elementum molestie tellus.          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris eleifend magna id ante convallis mattis.Quisque in sem tristique, dictum sapien et, accumsan libero.</p>
+            <p>I’m Roshita Jaiswal, a passionate tech learner with a <span>B.Sc. in Computer Science from Mumbai University. I’m currently working as a Coding, Python, AI/ML & Robotics Instructor at Robo Monnk,</span> where I teach school students through interactive, hands-on sessions. This role has helped me improve my technical skills and communication while igniting curiosity in young minds.
+
+I recently got admitted to the<span> M.Sc. Data Science program at Thakur College,</span> where I look forward to deepening my knowledge in data analytics, machine learning, and AI. I'm especially drawn to using data to solve real-world problems and hope to contribute to impactful research or products in the future.
+
+Throughout my academic journey, I’ve built several projects, including a <span>House Rental Management System , Spotify Colne and a Customer Relationship Management platform.</span> These projects gave me practical experience in web development using HTML, CSS, JavaScript, PHP, and MySQL.
+
+I love simplifying complex concepts and constantly strive to improve — whether it’s through teaching, coding, or learning new tools. My long-term goal is to become a skilled data scientist and educator who makes technology both powerful and accessible.</p>
 
             <div class="tab-titles">
                 <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
@@ -59,16 +68,104 @@
             </div>
             <div class="tab-contents" id="education">
                 <ul>
-                    <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
-                    <li><span>2016</span><br>MBA from MIT Bangalore.</li>
-                    <li><span>2014</span><br>BBA from ISM Bangalore.</li>
+                    <li><span>2025- currently</span><br>Master of Science (M.S.) Data Science<br>Thakur College - University Of Mumbai </li>
+                    <li><span>2025</span><br>Bachelor of Science (B.S.) Computer Science<br>(Final Percentile 9.55)Ratnam College - University Of Mumbai </li>
+                    <li><span>2025</span><br>BBA from ISM Bangalore.</li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
 </div>
-
+<!-- ---------------------------services---------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam laboriosam natus enim rerum quo unde repellendus corrupti quos delectus officiis nemo facere veritatis expedita dicta aliquid dolores voluptas, odit id?</p>
+                <a href="#" >Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Kuchto</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam laboriosam natus enim rerum quo unde repellendus corrupti quos delectus officiis nemo facere veritatis expedita dicta aliquid dolores voluptas, odit id?</p>
+                <a href="#" >Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>kuch to 2</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam laboriosam natus enim rerum quo unde repellendus corrupti quos delectus officiis nemo facere veritatis expedita dicta aliquid dolores voluptas, odit id?</p>
+                <a href="#" >Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------portfolio---------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="4.png">
+                <div class="layer">
+                    <h4>Face Recognition Student Attendence Web</h4>
+                    <p>A robust system designed to authenticate individuals and record attendance using facial recognition technology powered by deep learning. This project simplifies attendance tracking for classrooms, workplaces, or events.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div> 
+            <div class="work">
+                <img src="4.png">
+                <div class="layer">
+                    <h4>Face Recognition Student Attendence Web</h4>
+                    <p>A robust system designed to authenticate individuals and record attendance using facial recognition technology powered by deep learning. This project simplifies attendance tracking for classrooms, workplaces, or events.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="4.png">
+                <div class="layer">
+                    <h4>Face Recognition Student Attendence Web</h4>
+                    <p>A robust system designed to authenticate individuals and record attendance using facial recognition technology powered by deep learning. This project simplifies attendance tracking for classrooms, workplaces, or events.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div> 
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!------------contact-------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> roshitajaiswal5mah@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 8591877857</p>
+                <div class="socical-icons">
+                    <a href="https://www.linkedin.com/in/roshita-ram-jaiswal/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/its-rosh"><i class="fa-brands fa-github"></i></a>
+                    <br>
+                    <br><br>
+                </div>
+                <a href="my_CV.pdf" download class="btn btn2">Download CV</a><br><br>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Messege"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright <i class="fa-solid fa-copyright"></i> Roshita</p><i class="fa-solid fa-heart"></i>
+    </div>
+</div>
 <script>
 
         var tablinks = document.getElementsByClassName("tab-links");
@@ -84,7 +181,35 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
+
 </script>
 
+
+
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right= "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxQo9NBzqtrQVNjUigmhrtfeks8KqaSaQo0yDAljiBujB7l8n9lUUgy83QAmgB0nGof_Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+})
+</script>
 </body>
 </html>
