@@ -1,216 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Roshita Jaiswal</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/fa8e32ce7e.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roshita Jaiswal — Data Science Student &amp; Builder</title>
+<meta name="description" content="Portfolio of Roshita Jaiswal — M.Sc. Data Science student, Python &amp; Robotics trainer, and builder of small full-stack and computer-vision projects.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23FBFAF4' stroke='%231C2B39' stroke-width='4'/%3E%3Ctext x='32' y='42' font-family='monospace' font-weight='800' font-size='26' text-anchor='middle' fill='%231C2B39'%3ERJ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
+<script src="https://kit.fontawesome.com/fa8e32ce7e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="6.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Student/Developer</p>
-                <h1>Hi , I am <span>roshita</span><br>From Mumbai,India</h1>
-            </div>
-        </div>
-    </div>
-<!-- ---------------------------about---------------------------->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="7.png">
-        </div>
-        <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>I’m Roshita Jaiswal, a passionate tech learner with a <span>B.Sc. in Computer Science from Mumbai University. I’m currently working as a Coding, Python, AI/ML & Robotics Instructor at Robo Monnk,</span> where I teach school students through interactive, hands-on sessions. This role has helped me improve my technical skills and communication while igniting curiosity in young minds.
 
-I recently got admitted to the<span> M.Sc. Data Science program at Thakur College,</span> where I look forward to deepening my knowledge in data analytics, machine learning, and AI. I'm especially drawn to using data to solve real-world problems and hope to contribute to impactful research or products in the future.
+<header>
+  <nav>
+    <a href="#top" class="logo" aria-label="Roshita Jaiswal — home">RJ</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="assets/ROSHITA_CV.pdf" download class="btn btn-solid">Résumé</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </nav>
+</header>
 
-Throughout my academic journey, I’ve built several projects, including a <span>House Rental Management System , Spotify Colne and a Customer Relationship Management platform.</span> These projects gave me practical experience in web development using HTML, CSS, JavaScript, PHP, and MySQL.
+<!-- ============================= HERO ============================= -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-copy reveal in">
+      <div class="id-card">
+        <div><span class="k">Name</span><span>Roshita Jaiswal</span></div>
+        <div><span class="k">Focus</span><span>Data Science &amp; Software Dev</span></div>
+        <div><span class="k">Base</span><span>Mumbai, India</span></div>
+        <div><span class="k">Status</span><span>Open to internships</span></div>
+      </div>
+      <h1>I build small, <span class="hl">working things</span> — then teach people how they work.<span class="cursor">&nbsp;</span></h1>
+      <p class="lede">M.Sc. Data Science student at Thakur College, Mumbai University. I teach Python and robotics at Robomonnk, and spend the rest of my time building full-stack and computer-vision projects to learn by doing.</p>
+      <div class="cta-row">
+        <a href="#work" class="btn btn-solid">View my work →</a>
+        <a href="assets/ROSHITA_CV.pdf" download class="btn btn-ghost">Download CV ↓</a>
+      </div>
+    </div>
+    <div class="photo-block reveal in">
+      <figure class="polaroid">
+        <div class="frame">
+          <img src="assets/portrait.png" alt="Portrait of Roshita Jaiswal">
+        </div>
+        <figcaption>Roshita — Mumbai, 2026</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
 
-I love simplifying complex concepts and constantly strive to improve — whether it’s through teaching, coding, or learning new tools. My long-term goal is to become a skilled data scientist and educator who makes technology both powerful and accessible.</p>
+<!-- ============================= ABOUT ============================= -->
+<section id="about">
+  <div class="wrap">
+    <span class="eyebrow">01 · About</span>
+    <h2 class="section-title"><span class="mark">The short version</span></h2>
+    <div class="about-grid">
+      <div class="stat-card reveal">
+        <span class="status">Open to internships</span>
+        <dl>
+          <div><dt>Based in</dt><dd>Mumbai, India</dd></div>
+          <div><dt>Studying</dt><dd>M.Sc. Data Science</dd></div>
+          <div><dt>Teaching</dt><dd>Python &amp; Robotics</dd></div>
+          <div><dt>Prior degree</dt><dd>B.Sc. Computer Science</dd></div>
+        </dl>
+      </div>
+      <div class="about-copy reveal">
+        <p>I'm Roshita — a <strong>B.Sc. Computer Science</strong> graduate from Mumbai University, now studying for my <strong>M.Sc. in Data Science</strong> at Thakur College. Most days I split my time between learning how data science actually works, and helping younger students get their first line of Python to run.</p>
+        <p>I currently teach <strong>Python and robotics</strong> at Robomonnk, breaking programming and robotics concepts down into lessons students can actually follow — a habit that's made me better at explaining my own work, not just doing it.</p>
+        <p>Outside of class, I build. Most of what's below started as a "can I actually make this work" question — a face-recognition attendance system, a Flask app wired up to Google's Gemini API, a property-rental site, a Spotify front-end clone. I like projects small enough to finish and real enough to break.</p>
+        <span class="signoff">— Roshita</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <div class="tab-titles">
-                <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
-                <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
-                <p class="tab-links" onclick="opentab('education', event)">Education</p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-                <ul>
-                    <li><span>UI/UX</span><br>Designing Web interfaces</li>
-                    <li><span>Web Development</span><br>Web app Development</li>
-                    <li><span>Python</span><br>Python-based desktop application</li>
-                </ul>
-            </div>
-            <div class="tab-contents" id="experience">
-                <ul>
-                    <li><span>2026 - Current</span><br>Working as a Coding, Python & Robotics Instructor At Robo Monnk</li>
-                    <li><span>2026 </span><br>More Coming Up</li>
-                    
-                <ul>
-            </div>
-            <div class="tab-contents" id="education">
-                <ul>
-                    <li><span>2026- currently</span><br>Master of Science (M.S.) Data Science<br>Thakur College - University Of Mumbai </li>
-                    <li><span>2026</span><br>Bachelor of Science (B.S.) Computer Science<br> Ratnam College - University Of Mumbai (Final Percentile 9.55) </li>
-                    <li><span>2026</span><br>Data Science & Web Development<br>Apna College</li>
-                </ul>
-            </div>
+<!-- ============================= SKILLS ============================= -->
+<section id="skills">
+  <div class="wrap">
+    <span class="eyebrow">02 · Skills</span>
+    <h2 class="section-title"><span class="mark">What I actually use</span></h2>
+    <div class="skill-groups">
+      <div class="skill-group reveal">
+        <h3>Languages</h3>
+        <div class="tags">
+          <span class="tag">Python</span><span class="tag">Java</span><span class="tag">JavaScript</span><span class="tag">SQL</span>
         </div>
-    </div>
-</div>
-</div>
-<!-- ---------------------------services---------------------------->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title"> My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>I have developed a wide range of web development projects that showcase my technical skills, creativity, and problem-solving abilities. From dynamic websites to fully functional web applications, I have built platforms that are user-friendly, visually appealing, and performance-optimized.am proficient in technologies like HTML, CSS, JavaScript, PHP, and MySQL</p>
-                <a href="#" >Learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-python"></i>
-                <h2>Python Development</h2>
-                <p>I have built a variety of projects using Python, demonstrating my ability to write clean, efficient, and scalable code. From automation scripts and data-driven applications to games and educational tools, each project reflects my deep understanding of Python's versatility. I am confident working with libraries such as NumPy, Pandas, Tkinter, and matplotlib.</p>
-                <a href="https://github.com/its-rosh/py_practice_0_to_Hero" >Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-database"></i>
-                <h2>SQL and Data Science</h2>
-                <p>With a strong foundation in SQL and Data Science, I have completed multiple projects that involve data collection, cleaning, analysis, and visualization. I am skilled at writing optimized SQL queries </p>
-                <a href="#" >Learn more</a>
-            </div>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Data &amp; ML</h3>
+        <div class="tags">
+          <span class="tag">Data Cleaning &amp; Preprocessing</span><span class="tag">Exploratory Data Analysis</span><span class="tag">Computer Vision (OpenCV, YOLO)</span><span class="tag">Generative AI Integration (Gemini API)</span>
         </div>
-    </div>
-</div>
-<!--------------------portfolio---------------------->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="10.png">
-                <div class="layer">
-                    <h4>Face Recognition Attendence Web</h4>
-                    <p>A robust system designed to authenticate individuals and record attendance using facial recognition technology powered by deep learning. This project simplifies attendance tracking for classrooms, workplaces, or events.</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div> 
-            <div class="work">
-                <img src="9.png">
-                <div class="layer">
-                    <h4>spoti</h4>
-                    <p>Spotify Clone built using [insert technologies [ HTML5,CSS]. This project replicates core features of the Spotify web player </p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="8.png">
-                <div class="layer">
-                    <h4>Rental Hub </h4>
-                    <p>Develop a user-friendly, responsive website for Rental Hub that showcases its property listings, promotes its brand values, and serves as a platform for users to access information, engage with 
-property owners and agents, and seamlessly initiate rental or purchase transactions. </p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-        </div> 
-        <a href="#" class="btn">See more</a>
-    </div>
-</div>
-<!------------contact-------------------------->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact me</h1>
-                <p><i class="fa-regular fa-paper-plane"></i> roshitajaiswal5mah@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i> 8591877857</p>
-                <p><i class="fa-solid fa-location"></i> Mumbai, Maharashtra</p>
-                <div class="socical-icons">
-                    <a href="https://www.linkedin.com/in/roshita-ram-jaiswal/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/its-rosh"><i class="fa-brands fa-github"></i></a>
-                    <br>
-                    <br><br>
-                </div>
-                <a href="ROSHITA CV.pdf" download class="btn btn2">Download CV</a><br><br>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Messege"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-            </div>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Web</h3>
+        <div class="tags">
+          <span class="tag">HTML/CSS</span><span class="tag">PHP</span><span class="tag">Flask</span><span class="tag">MySQL</span>
         </div>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Tools</h3>
+        <div class="tags">
+          <span class="tag">Git/GitHub</span><span class="tag">VS Code</span><span class="tag">XAMPP</span><span class="tag">Excel</span>
+        </div>
+      </div>
     </div>
-    <div class="copyright">
-        <p>copyright <i class="fa-solid fa-copyright"></i> Roshita</p><i class="fa-solid fa-heart"></i>
+  </div>
+</section>
+
+<!-- ============================= LOGBOOK ============================= -->
+<section id="logbook">
+  <div class="wrap">
+    <span class="eyebrow">03 · Logbook</span>
+    <h2 class="section-title"><span class="mark">Experience &amp; education</span></h2>
+    <div class="logbook">
+      <div class="log-entry reveal">
+        <div class="log-date">2025 —<br>Present</div>
+        <div class="log-card">
+          <span class="tag-type">Experience</span>
+          <h3>Python &amp; Robotics Trainer</h3>
+          <div class="org">Robomonnk</div>
+          <ul>
+            <li>Design and deliver Python and robotics lessons for student cohorts, turning core concepts into structured, hands-on sessions.</li>
+            <li>Co-develop workshop curriculum and guide students through live debugging to build independent troubleshooting skills.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="log-entry reveal">
+        <div class="log-date">2025 —<br>2027</div>
+        <div class="log-card">
+          <span class="tag-type">Education</span>
+          <h3>M.Sc. Data Science</h3>
+          <div class="org">Thakur College, Mumbai University · CGPA 8.91 (Year 1)</div>
+          <ul><li>Coursework spanning data analytics, machine learning, and applied statistics.</li></ul>
+        </div>
+      </div>
+      <div class="log-entry reveal">
+        <div class="log-date">2022 —<br>2025</div>
+        <div class="log-card">
+          <span class="tag-type">Education</span>
+          <h3>B.Sc. Computer Science</h3>
+          <div class="org">Ratnam College, Mumbai University · Final year CGPA 9.55</div>
+          <ul><li>CGPA climbed every year: 8.00 → 9.40 → 9.55.</li></ul>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
+</section>
+
+<!-- ============================= PROJECTS ============================= -->
+<section id="work">
+  <div class="wrap">
+    <span class="eyebrow">04 · Work</span>
+    <h2 class="section-title"><span class="mark">Things I've built</span></h2>
+
+    <div class="project-grid">
+
+      <article class="project-card reveal">
+        <div class="project-thumb" style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2.8rem 1.2rem 1.2rem;background:linear-gradient(160deg,#E4E8DD,#F5F6F0);">
+          <span class="project-index">No. 01</span>
+          <p style="font-family:var(--font-mono);font-size:0.95rem;color:var(--ink-soft);text-align:center;line-height:2;margin:0;">User <span style="color:var(--red)">→</span> Flask <span style="color:var(--red)">→</span> Gemini AI <span style="color:var(--red)">→</span> Real Answer</p>
+        </div>
+        <div class="project-body">
+          <h3>Gemini AI Assistant</h3>
+          <p>A Flask web app wired up to Google's Gemini API — type a question into a form, get a real AI-generated answer rendered back, end to end.</p>
+          <div class="project-stack"><span>Python</span><span>Flask</span><span>Gemini API</span><span>HTML/CSS</span></div>
+          <div class="project-links">
+            <a href="https://github.com/its-rosh/Gemini" target="_blank" rel="noopener">Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-thumb">
+          <span class="project-index">No. 02</span>
+          <img src="assets/project-attendance.jpg" alt="Sign-in screen of the Face Recognition Attendance System, built for Ratnam College">
+        </div>
+        <div class="project-body">
+          <h3>Face Recognition Attendance System</h3>
+          <p>A role-based attendance system for admins and lecturers — capture a few reference photos per student, then recognize faces live and log attendance automatically.</p>
+          <div class="project-stack"><span>PHP</span><span>JavaScript (face-api.js)</span><span>MySQL</span></div>
+          <div class="project-links">
+            <a href="https://github.com/its-rosh/Personal-Face-Recognition-Attendance-System" target="_blank" rel="noopener">Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-thumb">
+          <span class="project-index">No. 03</span>
+          <img src="assets/project-rentalhub.jpg" alt="Homepage of the RentalHub property rental website">
+        </div>
+        <div class="project-body">
+          <h3>RentalHub</h3>
+          <p>A property-rental site with listings, filtering, and a full booking-inquiry flow, built end-to-end from the database up.</p>
+          <div class="project-stack"><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>HTML/CSS</span></div>
+          <div class="project-links">
+            <span class="unavailable">Repo not public yet</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-thumb">
+          <span class="project-index">No. 04</span>
+          <img src="assets/project-spoti.jpg" alt="Homepage of the Spotify web player clone">
+        </div>
+        <div class="project-body">
+          <h3>Spotify Clone</h3>
+          <p>A front-end rebuild of the Spotify web player — recently played, trending tracks, and a working now-playing bar.</p>
+          <div class="project-stack"><span>HTML</span><span>CSS</span></div>
+          <div class="project-links">
+            <a href="https://github.com/its-rosh/spoti" target="_blank" rel="noopener">Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <p style="margin-top:2.2rem;font-family:var(--font-mono);font-size:0.86rem;color:var(--ink-soft);">
+      Also on GitHub —
+      <a href="https://github.com/its-rosh/Py__AInML" target="_blank" rel="noopener" style="color:var(--teal);border-bottom:1px solid var(--teal);">Py__AInML, Python/ML practice ↗</a>
+      &nbsp;·&nbsp;
+      <a href="https://github.com/its-rosh/leetcode-solutions" target="_blank" rel="noopener" style="color:var(--teal);border-bottom:1px solid var(--teal);">leetcode-solutions, DSA in Java ↗</a>
+    </p>
+  </div>
+</section>
+
+<!-- ============================= CONTACT ============================= -->
+<section id="contact">
+  <div class="wrap">
+    <span class="eyebrow">05 · Contact</span>
+    <h2 class="section-title"><span class="mark">Let's talk</span></h2>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <dl>
+          <div><dt>Email</dt><dd><a href="mailto:roshitajaiswal5mah@gmail.com">roshitajaiswal5mah@gmail.com</a></dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+918591877857">+91 85918 77857</a></dd></div>
+          <div><dt>Base</dt><dd>Mumbai, India</dd></div>
+          <div><dt>Résumé</dt><dd><a href="assets/ROSHITA_CV.pdf" download>Download PDF ↓</a></dd></div>
+        </dl>
+        <div class="contact-social">
+          <a href="https://github.com/its-rosh" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/roshita-ram-jaiswal/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:roshitajaiswal5mah@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+      <form class="contact-form reveal" id="contactForm" name="submit-to-google-sheet">
+        <div class="field"><label for="f-name">Name</label><input id="f-name" type="text" name="Name" required></div>
+        <div class="field"><label for="f-email">Email</label><input id="f-email" type="email" name="Email" required></div>
+        <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="Message" rows="5" required></textarea></div>
+        <button type="submit" class="btn btn-solid">Send note →</button>
+        <p class="form-msg" id="formMsg"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Designed &amp; built by Roshita Jaiswal — © 2026</p>
+</footer>
+
 <script>
+  // mobile nav
+  const navToggleBtn = document.getElementById('navToggle');
+  const navLinksEl = document.getElementById('navLinks');
+  navToggleBtn.addEventListener('click', () => {
+    const isOpen = navLinksEl.classList.toggle('open');
+    navToggleBtn.setAttribute('aria-expanded', isOpen);
+    navToggleBtn.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+  });
+  navLinksEl.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinksEl.classList.remove('open');
+    navToggleBtn.setAttribute('aria-expanded', false);
+    navToggleBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+  }));
 
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+  // scroll reveal
+  const revealEls = document.querySelectorAll('.reveal:not(.in)');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+  // safety net: never leave content permanently hidden (slow JS, crawlers, screenshot tools)
+  setTimeout(() => revealEls.forEach(el => el.classList.add('in')), 600);
 
-        function opentab(tabname, event) {
-        for (let tablink of tablinks) {
-            tablink.classList.remove("active-link");
-        }
-        for (let tabcontent of tabcontents) {
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
-</script>
-
-
-
-
-<script>
-
-    var sidemeu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemeu.style.right = "0";
-    }
-    function closemenu(){
-        sidemeu.style.right= "-200px";
-    }
-
-</script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxQo9NBzqtrQVNjUigmhrtfeks8KqaSaQo0yDAljiBujB7l8n9lUUgy83QAmgB0nGof_Q/exec'
-    const form = document.forms['submit-to-google-sheet']
-
-    form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-})
+  // contact form -> Google Sheets, with visible confirmation
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxQo9NBzqtrQVNjUigmhrtfeks8KqaSaQo0yDAljiBujB7l8n9lUUgy83QAmgB0nGof_Q/exec';
+  const form = document.getElementById('contactForm');
+  const formMsgEl = document.getElementById('formMsg');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    formMsgEl.textContent = 'Sending…';
+    formMsgEl.className = 'form-msg';
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(() => {
+        formMsgEl.textContent = '✓ Sent — thanks, I\'ll get back to you soon.';
+        formMsgEl.className = 'form-msg ok';
+        form.reset();
+      })
+      .catch(() => {
+        formMsgEl.textContent = 'Something went wrong — please email me directly instead.';
+        formMsgEl.className = 'form-msg err';
+      });
+  });
 </script>
 </body>
 </html>
